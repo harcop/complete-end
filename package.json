@@ -1,11 +1,12 @@
 {
   "name": "complete-end",
   "version": "1.0.0",
-  "description": "",
+  "description": "The completeString function is a JavaScript function that ensures a given string ends with a desired ending. If the string already ends with the desired ending, the function returns the original string. Otherwise, the function adds the missing characters to the end of the string.",
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "ava"
+    "test": "ava",
+    "build": "tsc"
   },
   "ava": {
     "extensions": {

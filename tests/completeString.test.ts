@@ -1,5 +1,5 @@
 import test from 'ava';
-import completeString from '../src/index';
+import completeString from '../src/completeString';
 
 test('should append the desired ending if it is not already present', t => {
   const inputString = 'https://url.com'
