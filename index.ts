@@ -1,4 +1,4 @@
-export default function completeEnd(inputString: string, desiredEnding: string): string {
+export default function completeString(inputString: string, desiredEnding: string): string {
   if (!inputString.endsWith(desiredEnding)) {
     let rld = inputString;
 
