@@ -1,9 +1,12 @@
 {
   "name": "@toluwap/complete-string",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "The completeString function is a JavaScript function that ensures a given string ends with a desired ending. If the string already ends with the desired ending, the function returns the original string. Otherwise, the function adds the missing characters to the end of the string.",
   "type": "module",
   "main": "dist/index.js",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "tsc",
     "test": "ava"

@@ -19,3 +19,9 @@ console.log(completeString("https://url.com/api", "/api/v4")); // output: https:
 
 console.log(completeString("https://url.com/api/v4", "/api/v4")); // output: https://url.com/api/v4
 ```
+
+## test
+
+```
+$ npm test
+```
