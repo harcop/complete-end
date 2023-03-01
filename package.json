@@ -1,26 +1,37 @@
 {
   "name": "@toluwap/complete-string",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "description": "The completeString function is a JavaScript function that ensures a given string ends with a desired ending. If the string already ends with the desired ending, the function returns the original string. Otherwise, the function adds the missing characters to the end of the string.",
-  "type": "module",
-  "main": "dist/index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "dist/*"
+    "lib/**/*"
   ],
   "scripts": {
     "build": "tsc",
     "test": "ava"
   },
   "ava": {
-    "extensions": {
-      "ts": "module"
-    },
-    "nodeArguments": [
-      "--loader=ts-node/esm","--experimental-specifier-resolution=node"
+    "extensions": [
+      "ts"
+    ],
+    "require": [
+      "ts-node/register"
     ]
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "complete end",
+    "complet string"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/harcop/complete-end.git"
+  },
+  "homepage": "https://github.com/harcop/complete-end#readme",
+  "bugs": {
+    "url": "https://github.com/harcop/complete-end/issues"
+  },
+  "author": "Harcop Toluwap",
   "license": "ISC",
   "devDependencies": {
     "ava": "^5.2.0",
