@@ -3,6 +3,8 @@
 The completeString function is a JavaScript function that ensures a given string ends with a desired ending. If the string already ends with the desired ending, the function returns the original string. Otherwise, the function adds the missing characters to the end of the string.
 
 ```ts
+import { completeString } from "@toluwap/complete-string"
+
 const result = completeString(inputString, desiredEnding);
 ```
 
