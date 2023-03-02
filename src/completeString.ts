@@ -1,16 +1,12 @@
 export default function completeString(inputString: string, desiredEnding: string): string {
   if (!inputString.endsWith(desiredEnding)) {
-    let lengthdiff = inputString.length - desiredEnding.length;
-    
-    // if the inputString length is > desireEnding length, tempString will cut out the length of the desireEnding from inputString else use the whole inputString length
-    let tempString = lengthdiff > 0 ? inputString.slice(lengthdiff) : inputString;
-
-    const initTempStringLength = tempString.length
-    for(let i = 0; i<initTempStringLength; i++) {
-      if(desiredEnding.startsWith(tempString)) {
-        return inputString + desiredEnding.slice(tempString.length)
+    for(let i = 0; i<desiredEnding.length; i++) {
+      let partialString = desiredEnding.slice(0, i+1)
+      let partialStringRegex = new RegExp(`${partialString}$`)
+      let matchPartialString = inputString.match(partialStringRegex)
+      if(matchPartialString) {
+        return inputString.replace(partialStringRegex, desiredEnding)
       }
-      tempString = tempString.slice(1)
     }
     return inputString + desiredEnding
   }
