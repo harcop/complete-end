@@ -42,3 +42,9 @@ test("should handle edge cases where the input string is an empty string", (t) =
 
   t.is(completeString(inputString, desiredEnding), "Hello");
 });
+
+test("hpot", (t) => {
+  const inputString = "hpotpot";
+  const desiredEnding = "potpotpot";
+  t.is(completeString(inputString, desiredEnding), "hpotpotpot");
+});
