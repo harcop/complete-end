@@ -16,6 +16,3 @@ export default function completeString(inputString: string, desiredEnding: strin
   }
   return inputString;
 }
-
-
-console.log(completeString('hpotpot', 'potpotpot'))
